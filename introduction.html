@@ -17,7 +17,7 @@
 
         <button class="dropdownbutton">
             UI Layout
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Settings</a>
@@ -33,7 +33,7 @@
 
         <button class="dropdownbutton">
             Block Architecture
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Automation</a>
@@ -41,7 +41,7 @@
 
         <button class="dropdownbutton">
             Block-/Parameter-Level Controls
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Block-Level</a>
@@ -54,7 +54,7 @@
 
         <button class="dropdownbutton">
             Samplers
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Classic</a>
@@ -63,7 +63,7 @@
 
         <button class="dropdownbutton">
             Synths
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Berk</a>
@@ -72,13 +72,13 @@
 
         <button class="dropdownbutton">
             Effects
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
 
             <button class="dropdownbutton">
                 Delay
-                <i class=""fa fa-caret-down"></i>
+                <i class="fa-caret-down"></i>
             </button>
             <div class="dropdownbutton">
                 <a href="">Rattler</a>
@@ -86,7 +86,7 @@
             
             <button class="dropdownbutton">
                 Destruction
-                <i class=""fa fa-caret-down"></i>
+                <i class="fa-caret-down"></i>
             </button>
             <div class="dropdownbutton">
                 <a href="">Freeze</a>
@@ -98,7 +98,7 @@
 
             <button class="dropdownbutton">
                 Dynamics
-                <i class=""fa fa-caret-down"></i>
+                <i class="fa-caret-down"></i>
             </button>
             <div class="dropdownbutton">
                 <a href="">Compressor</a>
@@ -106,7 +106,7 @@
 
             <button class="dropdownbutton">
                 Filters
-                <i class=""fa fa-caret-down"></i>
+                <i class="fa-caret-down"></i>
             </button>
             <div class="dropdownbutton">
                 <a href="">Special - Tract</a>
@@ -118,7 +118,7 @@
 
             <button class="dropdownbutton">
                 Space
-                <i class=""fa fa-caret-down"></i>
+                <i class="fa-caret-down"></i>
             </button>
             <div class="dropdownbutton">
                 <a href="">Spring Reverb</a>
@@ -126,7 +126,7 @@
 
             <button class="dropdownbutton">
                 Tonal
-                <i class=""fa fa-caret-down"></i>
+                <i class="fa-caret-down"></i>
             </button>
             <div class="dropdownbutton">
                 <a href="">Resonator</a>
@@ -134,7 +134,7 @@
 
             <button class="dropdownbutton">
                 Utility
-                <i class=""fa fa-caret-down"></i>
+                <i class="fa-caret-down"></i>
             </button>
             <div class="dropdownbutton">
                 <a href="">Gainer</a>
@@ -144,7 +144,7 @@
 
         <button class="dropdownbutton">
             Manipulators
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Introduction</a>
@@ -155,7 +155,7 @@
         
         <button class="dropdownbutton">
             Other Block Types
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Meta Block</a>
@@ -165,7 +165,7 @@
 
         <button class="dropdownbutton">
             Macros
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Macro Creation</a>
@@ -175,7 +175,7 @@
 
         <button class="dropdownbutton">
             Sends and Receives
-            <i class=""fa fa-caret-down"></i>
+            <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="">Creating Send/Receive Busses</a>
@@ -189,31 +189,33 @@
 
 
     <div class="main">
-        <h1 class="centered">Introduction</h1>
-        <hr>
-        <p>
-            Welcome to the introduction! <br />
-            More text will be posted here after I get the formatting and sidebar set up.
-        </p>    
+        <div class="text-center">
+            <div class="display-inline">
+                <h1 class="centered">Introduction</h1>
+                <hr>
+                <p>
+                    Welcome to the introduction! <br />
+                </p>            
+            </div>
+        </div>
     </div>
 
     <script>
         var dropdown = document.getElementsByClassName("dropdownbutton");
         var i;
-
-        for(i = 0; i < dropdown.length, i++){
-            dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                }
-                else {
-                    dropdownContent.style.display = "block";
-                }
-            });
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
         }
-    </script>
-
+        </script>
+        
 </body>
 </html>

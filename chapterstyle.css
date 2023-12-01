@@ -66,6 +66,10 @@ text-align: left;
 color: #915a98
 }
 
+.button {
+    border: none;
+}
+
 .sidenav {
     height: 100%;
     width: 250;
@@ -77,10 +81,8 @@ color: #915a98
     overflow-x: hidden;
     padding-top: 20px;
 }
- .sidenav a, .dropdownbutton, .dropdownbuttonL2 {
+ .sidenav a, .dropdownbutton {
     padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
     color: #783673;
     display: block;
     background: none;
@@ -90,7 +92,7 @@ color: #915a98
     outline: none;
 }
 
-.sidenav a:hover, .dropdownbutton:hover, dropdownbuttonL2:hover {
+.sidenav a:hover, .dropdownbutton:hover {
     color: #915a98;
 }
 
@@ -99,13 +101,13 @@ color: #915a98
 }
 
 .active {
-    background-color: #5e5360;
+    background-color: #c1b0c4;
     color: #0d0c0e;
 }
 
-.dropdown-container, .dropdown-containerL2 {
+.dropdown-container {
     display: none;
-    background-color: #73463f;
+    background-color: #201c22;
     padding-left: 8px;
 }
 
