@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="chapterstyle.css" type="text/css" rel="stylesheet">
+    <title>Introduction</title>
+</head>
+<body>
+
+    <div class="sidenav">
+
+        <a href="">Introduction and Notes</a>
+
+        <a href="">Glossary</a>
+
+        <a href="">First Steps</a>
+
+        <button class="dropdownbutton">
+            UI Layout
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Settings</a>
+            <a href="">Project Management Pane</a>
+            <a href="">File Explorer</a>
+        </div>
+
+        <a href="">Project Management</a>
+
+        <a href="">Navigation</a>
+
+        <a href="">Track Architecture</a>
+
+        <button class="dropdownbutton">
+            Block Architecture
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Automation</a>
+        </div>
+
+        <button class="dropdownbutton">
+            Block-/Parameter-Level Controls
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Block-Level</a>
+            <a href="">Parameter-Level</a>
+        </div>
+
+        <a href="">Input Buffer</a>
+
+        <a href="">MIDI</a>
+
+        <button class="dropdownbutton">
+            Samplers
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Classic</a>
+            <a href="">Fudge</a>
+        </div>
+
+        <button class="dropdownbutton">
+            Synths
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Berk</a>
+            <a href="">test synth</a>
+        </div>
+
+        <button class="dropdownbutton">
+            Effects
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+
+            <button class="dropdownbuttonL2">
+                Delay
+                <i class=""fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-containerL2">
+                <a href="">Rattler</a>
+            </div>
+            
+            <button class="dropdownbuttonL2">
+                Destruction
+                <i class=""fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-containerL2">
+                <a href="">Freeze</a>
+                <a href="">Lofi</a>
+                <a href="">Ring Modulator</a>
+                <a href="">Saturator</a>
+                <a href="">Wavebender</a>
+            </div>
+
+            <button class="dropdownbuttonL2">
+                Dynamics
+                <i class=""fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-containerL2">
+                <a href="">Compressor</a>
+            </div>
+
+            <button class="dropdownbuttonL2">
+                Filters
+                <i class=""fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-containerL2">
+                <a href="">Special - Tract</a>
+                <a href="">Special - Zap</a>
+                <a href="">Bandpass</a>
+                <a href="">Highpass</a>
+                <a href="">Lowpass</a>
+            </div>
+
+            <button class="dropdownbuttonL2">
+                Space
+                <i class=""fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-containerL2">
+                <a href="">Spring Reverb</a>
+            </div>
+
+            <button class="dropdownbuttonL2">
+                Tonal
+                <i class=""fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-containerL2">
+                <a href="">Resonator</a>
+            </div>
+
+            <button class="dropdownbuttonL2">
+                Utility
+                <i class=""fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-containerL2">
+                <a href="">Gainer</a>
+            </div>
+
+        </div>
+
+        <button class="dropdownbutton">
+            Manipulators
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Introduction</a>
+            <a href="">Creating a Manipulator Block</a>
+            <a href="">Settings</a>
+            <a href="">Reverse</a>
+        </div>
+        
+        <button class="dropdownbutton">
+            Other Block Types
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Meta Block</a>
+            <a href="">Start Block</a>
+            <a href="">Tempo Guide</a>
+        </div>
+
+        <button class="dropdownbutton">
+            Macros
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Macro Creation</a>
+            <a href="">Macro Navigation</a>
+            <a href="">Macro Input Tracks</a>
+        </div>
+
+        <button class="dropdownbutton">
+            Sends and Receives
+            <i class=""fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="">Creating Send/Receive Busses</a>
+            <a href="">How Sends/Receives Work</a>
+            <a href="">Send/Receive Controls</a>
+            <a href="">Send/Receive Feedback - I</a>
+            <a href="">Send/Receive Feedback - II</a>
+            <a href="">Looping</a>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <h1 class="centered">Introduction</h1>
+        <hr>
+        <p>
+            Welcome to the introduction! <br />
+            More text will be posted here after I get the formatting and sidebar set up.
+        </p>    
+    </div>
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdownbutton");
+        var i;
+
+        for(i = 0; i < dropdown.length, i++){
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                }
+                else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
