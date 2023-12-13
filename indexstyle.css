@@ -6,62 +6,83 @@
     .display-inline {display: inline-block;}
     -->
 
+@font-face {
+    font-family: "open-sans";
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,400&family=Open+Sans&display=swap');
+}
+
+:root {
+  --text-colour: #d5d7d9;
+  --link-colour: #47a3ff;
+}
+
+
 body {
-background-color: #1c1c20;
+background-image: url(images/bg.png);
+background-repeat: repeat;
+font-family: 'open-sans', Trebuchet, sans-serif;
 }
 
 h1 {
 display: block;
 margin-left: auto;
 text-align: left;
-color: #f9c922
+
+color: var(--text-colour);
 }
+
 h2 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 h3 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 h4 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 h5 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 h6 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 p {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 a {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #915a98
+color: var(--link-colour);
 }
