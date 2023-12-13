@@ -6,64 +6,87 @@
     .display-inline {display: inline-block;}
     -->
 
+@font-face {
+    font-family: "open-sans";
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,400&family=Open+Sans&display=swap');
+}
+
+/* Set colours here so if changes are necessary later, they can be easily adjusted */
+:root {
+  --text-colour: #d5d7d9;
+  --link-colour: #47a3ff;
+  --container-colour: #444c57;
+  --subcontainer-colour: #202429;
+  --dropdown-colour: #3c424c;
+}
+
 body {
 background-color: #1c1c20;
+background-image: url(images/bg.png);
+font-family: 'open-sans', Trebuchet, sans-serif;
 }
 
 h1 {
 display: block;
 margin-left: auto;
 text-align: left;
-color: #f9c922
+color: var(--text-colour);
 }
+
 h2 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 h3 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 h4 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 h5 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 h6 {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 p {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #f9c922
+color: var(--text-colour);
 }
+
 a {
 display: block;
 margin-left: auto;
 text-align: left;
 
-color: #915a98
+color: var(--link-colour);
 }
 
 .button {
@@ -77,13 +100,14 @@ color: #915a98
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #0f0910;
+    background-color: var(--container-colour);
+    background-color: url(/images/background.png);
     overflow-x: hidden;
     padding-top: 20px;
 }
  .sidenav a, .dropdownbutton {
     padding: 6px 8px 6px 16px;
-    color: #783673;
+    color: var(--text-colour);
     display: block;
     background: none;
     width: 100%;
@@ -93,7 +117,7 @@ color: #915a98
 }
 
 .sidenav a:hover, .dropdownbutton:hover {
-    color: #915a98;
+    color: var(--link-colour);;
 }
 
 .main {
@@ -101,13 +125,13 @@ color: #915a98
 }
 
 .active {
-    background-color: #c1b0c4;
-    color: #0d0c0e;
+    background-color: var(--subcontainer-colour);
+    color: var(--text-colour);
 }
 
 .dropdown-container {
     display: none;
-    background-color: #201c22;
+    background-color: var(--dropdown-colour);
     padding-left: 8px;
 }
 
